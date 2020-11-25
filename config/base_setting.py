@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 SERVER_PORT = 8999
+
+SQLALCHEMY_DATABASE_URI = 'mysql://root:zjt000104@127.0.0.1/food_db?charset=utf8mb4'
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+
 DEBUG = False
 SQLALCHEMY_ECHO = False
 

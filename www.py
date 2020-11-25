@@ -23,11 +23,13 @@ from web.controllers.stat.Stat import route_stat
 from web.controllers.api import route_api
 from web.controllers.upload.Upload import route_upload
 from web.controllers.chart import route_chart
+from web.controllers.rider.rider import route_rider
 app.register_blueprint( route_index,url_prefix = "/" )
 app.register_blueprint( route_user,url_prefix = "/user" )
 app.register_blueprint( route_static,url_prefix = "/static" )
 app.register_blueprint( route_account,url_prefix = "/account" )
 app.register_blueprint( route_food,url_prefix = "/food" )
+app.register_blueprint( route_rider,url_prefix = "/rider" )
 app.register_blueprint( route_member,url_prefix = "/member" )
 app.register_blueprint( route_finance,url_prefix = "/finance" )
 app.register_blueprint( route_stat,url_prefix = "/stat" )

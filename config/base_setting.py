@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
-SERVER_PORT = 8999
+SERVER_PORT = 8889
 
-SQLALCHEMY_DATABASE_URI = 'mysql://root:zjt000104@127.0.0.1/food_db?charset=utf8mb4'
-SQLALCHEMY_TRACK_MODIFICATIONS = True
+
 
 DEBUG = False
 SQLALCHEMY_ECHO = False
@@ -53,7 +52,7 @@ UPLOAD = {
 }
 
 APP = {
-    'domain':'http://81.71.47.144:8999'
+    'domain':'http://81.71.47.144:8889'
 }
 
 

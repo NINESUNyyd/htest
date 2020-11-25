@@ -80,8 +80,8 @@ class JobTask():
             '''
             为了测试效果模拟数据
             '''
-            tmp_model_stat_member.total_shared_count = random.randint(50,100)
-            tmp_model_stat_member.total_pay_money = random.randint(1000,1010)
+            # tmp_model_stat_member.total_shared_count = random.randint(50,100)
+            # tmp_model_stat_member.total_pay_money = random.randint(1000,1010)
             tmp_model_stat_member.updated_time = getCurrentDate()
             db.session.add( tmp_model_stat_member )
             db.session.commit()
@@ -125,8 +125,8 @@ class JobTask():
             '''
             为了测试效果模拟数据
             '''
-            tmp_model_stat_food.total_count = random.randint(50, 100)
-            tmp_model_stat_food.total_pay_money = random.randint(1000, 1010)
+            # tmp_model_stat_food.total_count = random.randint(50, 100)
+            # tmp_model_stat_food.total_pay_money = random.randint(1000, 1010)
 
             db.session.add( tmp_model_stat_food )
             db.session.commit()
@@ -174,11 +174,11 @@ class JobTask():
         '''
         为了测试效果模拟数据
         '''
-        tmp_model_stat_site.total_pay_money = random.randint(1000, 1010)
-        tmp_model_stat_site.total_new_member_count = random.randint(50, 100)
-        tmp_model_stat_site.total_member_count += tmp_model_stat_site.total_new_member_count
-        tmp_model_stat_site.total_order_count = random.randint(900, 1000)
-        tmp_model_stat_site.total_shared_count = random.randint(1000, 2000)
+        # tmp_model_stat_site.total_pay_money = random.randint(1000, 1010)
+        # tmp_model_stat_site.total_new_member_count = random.randint(50, 100)
+        # tmp_model_stat_site.total_member_count += tmp_model_stat_site.total_new_member_count
+        # tmp_model_stat_site.total_order_count = random.randint(900, 1000)
+        # tmp_model_stat_site.total_shared_count = random.randint(1000, 2000)
         db.session.add(tmp_model_stat_site)
         db.session.commit()
 

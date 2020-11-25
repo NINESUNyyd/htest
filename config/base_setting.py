@@ -37,7 +37,8 @@ MINA_APP = {
     'appkey':'bb7c2428cf67f9e7f8f12c1b9cc5a7f6',
     'paykey':'xxxxxxxxxxxxxx换自己的',
     'mch_id':'xxxxxxxxxxxx换自己的',
-    'callback_url':'/api/order/callback'
+    # 'callback_url':'/api/order/callback'
+    'callback_url':'/api/order/callback2'
 }
 
 

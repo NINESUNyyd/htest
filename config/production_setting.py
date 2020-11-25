@@ -6,7 +6,7 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ENCODING = "utf8mb4"
 
 APP = {
-    'domain':'https://food.54php.cn'
+    'domain':'http://81.71.47.144:8999'
 }
 
 RELEASE_VERSION="20180729001"

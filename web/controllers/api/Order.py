@@ -217,7 +217,14 @@ def orderPay():
 	db.session.add( pay_order_info )
 	db.session.commit()
 
-	callback_res = requests.get(notify_url)
+	print(str(notify_url))
+	#headers = {'User-Agent' : 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; InfoPath.3)'}
+
+	#callback_res = requests.get(str(notify_url),headers=headers)
+	#print(str(callback_res))
+
+	target_pay = PayService()
+	target_pay.orderSuccess( pay_order_id=order_id,params={"pay_sn":""} )
 
 	resp['data']['pay_info'] = pay_info
 	print(pay_info)
@@ -271,6 +278,7 @@ web模拟回调方法
 '''
 @route_api.route( "/order/callback2" )
 def orderCallback2():
+	print("this is callback2")
 	req = request.values
 	id = int(req['id']) if 'id' in req else 0
 	if not id:
